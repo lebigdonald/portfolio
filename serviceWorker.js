@@ -34,7 +34,7 @@ var filesToCache = [
 
 // Cache on install
 self.addEventListener("install", event => {
-    console.log("[Service Worker] Installing Service Worker ...", event);
+    console.log("[Service Worker] Installing Service Worker ..." + staticCacheName, event);
     // this.skipWaiting();
     event.waitUntil(
         caches.open(staticCacheName)
@@ -46,7 +46,7 @@ self.addEventListener("install", event => {
 
 // Clear cache on activate
 self.addEventListener("activate", event => {
-    console.log("[Service Worker] Activating Service Worker ....", event);
+    console.log("[Service Worker] Activating Service Worker ...." + staticCacheName, event);
     event.waitUntil(
         caches.keys().then(cacheNames => {
             console.log("[Service Worker] Deleting Service Worker ...." + staticCacheName, event);
@@ -62,7 +62,7 @@ self.addEventListener("activate", event => {
 
 // Serve from Cache
 self.addEventListener("fetch", event => {
-    console.log("[Service Worker] Fetching Static Page ....", event);
+    console.log("[Service Worker] Fetching Static Page ...." + staticCacheName, event);
     event.respondWith(
         caches.match(event.request)
             .then(response => {
