@@ -2,14 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NKENGFACK Donald</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LeBigDonald</title>
+  
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <meta content="" name="keywords">
   <meta content="Donald NKENGFACK Porfolio" name="description">
 
-  <!-- Favicons -->
-  <link href="img/favicon.jpg" rel="icon">
-  <link href="img/apple-touch-icon.jpg" rel="apple-touch-icon">
+<!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+<!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#000000">
+
+<!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="LeBigDonald">
+  <link rel="icon" sizes="512x512" href="img/icons/icon-512x512.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="LeBigDonald">
+  <link rel="apple-touch-icon" href="img/icons/icon-512x512.png">
+<!--
+  <link href="img/icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1242x2208.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="img/icons/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />  
+-->
+<!-- Tile for Win8 -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/icons/icon-512x512.png">
+  
+  <script type="text/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceWorker.js', {
+            scope: '.'
+        }).then(function (registration) {
+            // Registration was successful
+            console.log('LeBigDonald: ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('LeBigDonald: ', err);
+        });
+    }
+  </script>
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +74,7 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">LeBigDonald</a>
+      <a class="navbar-brand js-scroll" href="#page-top"><img src="img/logo.png" class="img-fluid rounded b-shadow-a" alt="LeBigDonald"></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -66,19 +110,19 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am NKENGFACK Donald</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Software Engineer, Hardware Engineer,Full Stack Developer,Web Applications Developer,Mobile Applications Developer,Web Master,IT Consultant,IT Instructor</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <p class="display-6 color-d">Hello, world!</p>
+          <h1 class="intro-title mb-4">I am Donald NKENGFACK</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Software Engineer,Hardware Engineer,Database Administrator,Full Stack Developer,Web Applications Developer,Mobile Applications Developer,Web Master,IT Consultant,IT Instructor</span><strong class="text-slider"></strong></p>
+          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
         </div>
       </div>
     </div>
   </div>
   <!--/ Intro Skew End /-->
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <section class="about-mf sect-pt4 route">
     <div class="container">
-      <div class="row">
+      <div class="row" id="about">
         <div class="col-sm-12">
           <div class="box-shadow-full">
             <div class="row">
@@ -148,7 +192,7 @@
                     Software Projects Manager with a demonstrated history of working in the computer software industry and mentoring of students and professiionals.
                   </p>
                   <p class="lead">
-                    Skilled in Software Projects Management, Web and Mobile Applications Development both Front End and Back End, Web Master, Hardware and Software Maintainer, IT Consultant and Instructor
+                    Skilled in Software Projects Management, Web and Mobile Applications Development both Front End and Back End, Database Administration, Web Master, Hardware and Software Maintainer, IT Consultant and Instructor
                   </p>
                 </div>
               </div>
@@ -232,7 +276,7 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-heart"></i></span>
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
             </div>
             <div class="service-content">
               <h2 class="s-title">Web Mastering</h2>
@@ -275,7 +319,8 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+  <!--/ Section Counter Star /-->
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/intro-bg2.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -285,7 +330,7 @@
               <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
             </div>
             <div class="counter-num">
-              <p class="counter">6</p>
+              <p class="counter">10</p>
               <span class="counter-text">WORKS COMPLETED</span>
             </div>
           </div>
@@ -307,7 +352,7 @@
               <span class="ico-circle"><i class="ion-ios-people"></i></span>
             </div>
             <div class="counter-num">
-              <p class="counter">5</p>
+              <p class="counter">7</p>
               <span class="counter-text">TOTAL CLIENTS</span>
             </div>
           </div>
@@ -317,8 +362,8 @@
   </div>
 
   <!--/ Section Portfolio Star /-->
-  <section id="portfolio" class="portfolio-mf sect-pt4 route">
-    <div class="container">
+  <section class="portfolio-mf sect-pt4 route">
+    <div class="container" id="portfolio">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
@@ -330,11 +375,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="work-box">
-            <a href="img/soft_proj_manage.jpg" data-lightbox="gallery-mf">
+            <a href="http://wwww.tamco-tech.com/tamco" data-target="_blank">
               <div class="work-img">
-                <img src="img/soft_proj_manage.jpg" alt="" class="img-fluid">
+                <img src="img/portfolios/tamco-tech.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
@@ -345,8 +390,8 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="w-more">
-                      <span class="w-ctegory">OmegaMFI ERP</span> <br>
-                      <span class="w-ctegory">O-Collect Package</span>
+                      <span class="w-ctegory"><a href="" data-target="_blank">OmegaMFI ERP</a></span> <br>
+                      <span class="w-ctegory"><a href="https://www.omegamfi.com" data-target="_blank">O-Collect Package</a></span>
                     </div>
                   </div>
                 </div>
@@ -354,18 +399,18 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="work-box">
-            <a href="img/omega.png" data-lightbox="gallery-mf">
+            <a href="" data-target="_blank">
               <div class="work-img">
-                <img src="img/omega.png" alt="" class="img-fluid">
+                <img src="img/portfolios/omega.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-12">
                     <h2 class="w-title">OMEGA ERP</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">OMEGA ERP is a Microfonance ERP build to facilitate tasks in Microfinances.</span>
+                      <span class="w-ctegory">OMEGA ERP is a Microfonance ERP build to facilitate all the different tasks in a Microfinance.</span>
                     </div>
                   </div>
                 </div>
@@ -373,11 +418,12 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <!--
+        <div class="col-md-3">
           <div class="work-box">
             <a href="img/o-collect.png" data-lightbox="gallery-mf">
               <div class="work-img">
-                <img src="img/o-collect.png" alt="" class="img-fluid">
+                <img src="img/portfolios/o-collect.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
@@ -392,12 +438,12 @@
             </a>
           </div>
         </div>
-        
-        <div class="col-md-4">
+        -->
+        <div class="col-md-3">
           <div class="work-box">
-            <a href="img/oc_classic.png" data-lightbox="gallery-mf">
+            <a href="https://www.omegamfi.com/oc_classic" data-target="_blank">
               <div class="work-img">
-                <img src="img/oc_classic.png" alt="" class="img-fluid">
+                <img src="img/portfolios/oc_classic.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
@@ -412,11 +458,11 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="work-box">
-            <a href="img/oc_benskin.png" data-lightbox="gallery-mf">
+            <a href="https://www.omegamfi.com/oc_benskin" data-target="_blank">
               <div class="work-img">
-                <img src="img/oc_benskin.png" alt="" class="img-fluid">
+                <img src="img/portfolios/oc_benskin.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
@@ -431,11 +477,11 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="work-box">
-            <a href="img/mats-tech.png" data-lightbox="gallery-mf">
+            <a href="https://www.mats-tech.com" data-target="_blank">
               <div class="work-img">
-                <img src="img/mats-tech.png" alt="" class="img-fluid">
+                <img src="img/portfolios/mats-tech.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
@@ -455,8 +501,57 @@
   </section>
   <!--/ Section Portfolio End /-->
 
+  <!--/ Section Testimonials Star /-->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/intro-bg2.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="testimonial-mf" class="owl-carousel owl-theme">
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img/testimonials/dipoko.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Beryl DIPOKO</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  C'est un developeur doué. Suis trés fier d'avoir fait ca connaissance et travailler avec lui. Toujours prêt à t'expliquer le moindre detail d'un code si tu comprends pas.
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img//testimonials/manyama.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">MANYAMA Appolinaire</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  C'est un developeur doué et respecte les normes du developement. Suis trés ravis de travailler avec lui.
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img/testimonials/yakum.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Eugene YAKUM</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  He is indeed a great project manager, developer and instructor. Working with him is always fun and interesting.
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax bg-image route" style="background-image: url(img/intro-bg2.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -477,7 +572,7 @@
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name..." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                           </div>
                         </div>
@@ -500,7 +595,7 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-small pull-right button-rouded">Send <i class="fa fa-envelope"></i></button>
+                          <button type="submit" class="button button-a button-big button-rouded pull-right">Send Message</button>
                         </div>
                       </div>
                     </form>
@@ -525,14 +620,14 @@
                   <div class="socials">
                     <ul>
                       <li><a href="mailto:nkengfack96@gmail.com"><span class="ico-circle"><i class="ion-social-google"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/donald-nkengfack" target="_"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                      <li><a href="https://www.github.com/lebigdonald" target="_"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                    <!--  
                       <li><a href="mailto:nkengfack96@icloud.com"><span class="ico-circle"><i class="ion-social-apple"></i></span></a></li>
                       <li><a href="mailto:nkengfackdonald@yahoo.com"><span class="ico-circle"><i class="ion-social-yahoo"></i></span></a></li>
-                    
-                      <li><a href="https://www.linkedin.com/in/donald-nkengfack" target="_"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
                       <li><a href="https://www.twitter.com/lebigdonald" target="_"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
                       <li><a href="live:nkengfack96" target="_"><span class="ico-circle"><i class="ion-social-skype"></i></span></a></li>
-                   
-                      <li><a href="https://www.github.com/lebigdonald" target="_"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                    -->
                     </ul>
                   </div>
                 </div>
@@ -574,7 +669,7 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="js/contactform.js"></script>
+  <script src="js/contact_form.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
