@@ -40,21 +40,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/icons/icon-512x512.png">
   
-  <script type="text/javascript">
-    // Initialize the service worker
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('serviceWorker.js', {
-            scope: '.'
-        }).then(function (registration) {
-            // Registration was successful
-            console.log('LeBigDonald: ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-            // registration failed :(
-            console.log('LeBigDonald: ', err);
-        });
-    }
-  </script>
-
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -673,6 +658,21 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceWorker.js', {
+            scope: '.'
+        }).then(function (registration) {
+            // Registration was successful
+            console.log('LeBigDonald: ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('LeBigDonald: ', err);
+        });
+    }
+  </script>
 
 </body>
 </html>
