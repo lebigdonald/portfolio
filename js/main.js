@@ -82,7 +82,7 @@
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
-			$('.navbar-brand img').prop('src', './img/LeBiGDonald_White.png');
+			$('.navbar-brand img').prop('src', './img/LeBiGDonald_Black.png');
 		}
 		if ($(window).scrollTop() > top) {
 			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
