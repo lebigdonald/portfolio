@@ -78,9 +78,11 @@
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
 			$('.navbar-expand-md').removeClass('navbar-trans');
+			$('.navbar-brand img').prop('src', './img/LeBiGDonald_Black.png');
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
+			$('.navbar-brand img').prop('src', './img/LeBiGDonald_White.png');
 		}
 		if ($(window).scrollTop() > top) {
 			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
@@ -113,5 +115,26 @@
 			}
 		}
 	});
-
 })(jQuery);
+
+var backgroundImg = [
+	  "./img/headers/intro-bg1.jpg",
+	  "./img/headers/intro-bg2.jpg",
+	  "./img/headers/intro-bg3.jpg",
+	  "./img/headers/intro-bg4.jpg",
+	  "./img/headers/intro-bg5.jpg",
+	  "./img/headers/intro-bg6.jpg"
+	]
+
+
+	setInterval(changeImage(), 5000);
+
+	function changeImage() {
+	  var i = Math.ceil(Math.random() * 5);
+
+	  document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
+	}
+
+	var date = new Date();
+
+	$("#copyright_date").text(date.getFullYear());
