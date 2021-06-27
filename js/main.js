@@ -127,7 +127,7 @@ var backgroundImg = [
 	]
 
 
-	setInterval(changeImage(), 5000);
+	setInterval(changeImage, 5000);
 
 	function changeImage() {
 	  var i = Math.ceil(Math.random() * 5);
@@ -135,6 +135,4 @@ var backgroundImg = [
 	  document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
 	}
 
-	var date = new Date();
-
-	$("#copyright_date").text(date.getFullYear());
+	$("#copyright_date").text(new Date().getFullYear());
