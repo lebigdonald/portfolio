@@ -78,11 +78,11 @@
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
 			$('.navbar-expand-md').removeClass('navbar-trans');
-			$('.navbar-brand img').prop('src', './img/LeBiGDonald_Black.png');
+			$('.navbar-brand img').prop('src', './img/LeBigDonald_Black.png');
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
-			$('.navbar-brand img').prop('src', './img/LeBiGDonald_Black.png');
+			$('.navbar-brand img').prop('src', './img/LeBigDonald_Black.png');
 		}
 		if ($(window).scrollTop() > top) {
 			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
