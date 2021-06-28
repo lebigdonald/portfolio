@@ -111,28 +111,27 @@
 		autoplayHoverPause: false,
 		responsive: {
 			0: {
-				items: 3,
+				items: 2,
 			}
 		}
 	});
 })(jQuery);
 
 var backgroundImg = [
-	  "./img/headers/intro-bg1.jpg",
-	  "./img/headers/intro-bg2.jpg",
-	  "./img/headers/intro-bg3.jpg",
-	  "./img/headers/intro-bg4.jpg",
-	  "./img/headers/intro-bg5.jpg",
-	  "./img/headers/intro-bg6.jpg"
-	]
+  "./img/headers/intro-bg1.jpg",
+  "./img/headers/intro-bg2.jpg",
+  "./img/headers/intro-bg3.jpg",
+  "./img/headers/intro-bg4.jpg",
+  "./img/headers/intro-bg5.jpg",
+  "./img/headers/intro-bg6.jpg"
+]
 
+setInterval(changeImage, 5000);
 
-	setInterval(changeImage, 5000);
+function changeImage() {
+  var i = Math.ceil(Math.random() * 5);
 
-	function changeImage() {
-	  var i = Math.ceil(Math.random() * 5);
+  document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
+}
 
-	  document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
-	}
-
-	$("#copyright_date").text(new Date().getFullYear());
+$("#copyright_date").text(new Date().getFullYear());
