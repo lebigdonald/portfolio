@@ -132,6 +132,8 @@ function changeImage() {
   var i = Math.ceil(Math.random() * 5);
 
   document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
+  document.getElementById("section-counter").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
+  document.getElementById("testimonials").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
 }
 
 $("#copyright_date").text(new Date().getFullYear());
