@@ -105,35 +105,73 @@
 
 	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: false,
-		responsive: {
-			0: {
-				items: 2,
-			}
-		}
+		loop: true,
+    nav: false,
+    dots: true,
+    center: true,
+    margin: 15,
+    slideSpeed: 1000,
+    autoplayTimeout: 5000,
+    stopOnHover: false,
+    autoPlay: true,
+    responsiveClass: true,
+    responsiveRefreshRate: true,
+    responsive : {
+        0 : {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        960 : {
+            items: 3
+        },
+        1200 : {
+            items: 3
+        },
+        1920 : {
+            items: 3
+        }
+    }
 	});
 })(jQuery);
 
-var backgroundImg = [
+var home = [
   "./img/headers/intro-bg1.jpg",
   "./img/headers/intro-bg2.jpg",
   "./img/headers/intro-bg3.jpg",
   "./img/headers/intro-bg4.jpg",
   "./img/headers/intro-bg5.jpg",
   "./img/headers/intro-bg6.jpg"
-]
+];
+
+var section_counter = [
+  "./img/headers/intro-bg6.jpg",
+  "./img/headers/intro-bg5.jpg",
+  "./img/headers/intro-bg4.jpg",
+  "./img/headers/intro-bg3.jpg",
+  "./img/headers/intro-bg2.jpg",
+  "./img/headers/intro-bg1.jpg"
+];
+
+var testimonials_footer = [
+  "./img/headers/intro-bg4.jpg",
+  "./img/headers/intro-bg5.jpg",
+  "./img/headers/intro-bg6.jpg",
+  "./img/headers/intro-bg1.jpg",
+  "./img/headers/intro-bg2.jpg",
+  "./img/headers/intro-bg3.jpg"
+];
 
 setInterval(changeImage, 5000);
 
 function changeImage() {
   var i = Math.ceil(Math.random() * 5);
 
-  document.getElementById("home").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
-  document.getElementById("section-counter").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
-  document.getElementById("testimonials").style.backgroundImage = "url('" + backgroundImg[i] + "')"; 
+  document.getElementById("home").style.backgroundImage = "url('" + home[i] + "')"; 
+  document.getElementById("section-counter").style.backgroundImage = "url('" + section_counter[i] + "')"; 
+  document.getElementById("testimonials").style.backgroundImage = "url('" + testimonials_footer[i] + "')"; 
+  document.getElementById("footer").style.backgroundImage = "url('" + testimonials_footer[i] + "')"; 
 }
 
 $("#copyright_date").text(new Date().getFullYear());
