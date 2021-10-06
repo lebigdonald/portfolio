@@ -1329,3 +1329,8 @@ footer .credits a {
 ::-webkit-scrollbar-button {
   background: #0078ff;
 }
+
+.portfolio-mf .img-fluid {
+  height: 960px !important;
+  weight: 600px !important;
+}
