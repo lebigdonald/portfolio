@@ -1,4 +1,4 @@
-var staticCacheName = "portfolio-v" + new Date().getTime();
+var staticCacheName = "lbd-v" + new Date().getTime();
 var filesToCache = [
     "./lib/bootstrap/css/bootstrap.min.css",
     "./lib/font-awesome/css/font-awesome.min.css",
