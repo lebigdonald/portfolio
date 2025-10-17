@@ -36,3 +36,5 @@ coverage/
 .vscode-test/
 .sass-cache/
 *.tsbuildinfo
+
+public/profile.json
