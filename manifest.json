@@ -1,25 +1,65 @@
 {
-  "short_name": "PortFolio",
-  "name": "PortFolio",
+  "name": "Donald NGUIMFACK",
+  "short_name": "DN",
+  "Description": "Donald NGUIMFACK Portfolio",
+  "lang": "en-US",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "display": "standalone",
+  "orientation": "any",
+  "status_bar": "black",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "./favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any maskable"
     },
     {
-      "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
+      "src": "./favicon-32x32.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "32x32",
+      "purpose": "any maskable"
     },
     {
-      "src": "/android-chrome-384x384.png?v8=qAJ44G5Bm7",
+      "src": "./apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "384x384"
+      "sizes": "152x152",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./android-chrome-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#6c63ff",
-  "background_color": "#ffffff"
+  "shortcuts": [
+    {
+      "name": "Donald NGUIMFACK",
+      "description": "Donald NGUIMFACK Portfolio",
+      "url": "/",
+      "icons": [
+        {
+          "src": "./apple-touch-icon.png",
+          "type": "image/png",
+          "sizes": "128x128",
+          "purpose": "any maskable"
+        }
+      ]
+    }
+  ]
 }

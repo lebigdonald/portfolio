@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a1864d08.css",
-    "main.js": "/portfolio/static/js/main.c935a666.js",
-    "static/css/64.bba8fa55.chunk.css": "/portfolio/static/css/64.bba8fa55.chunk.css",
-    "static/js/64.41912c0a.chunk.js": "/portfolio/static/js/64.41912c0a.chunk.js",
-    "static/css/769.b3cbb36b.chunk.css": "/portfolio/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.6b18baac.chunk.js": "/portfolio/static/js/769.6b18baac.chunk.js",
-    "static/media/safari-pinned-tab.svg": "/portfolio/static/media/safari-pinned-tab.2a6f793fe5eb2e11e9a488419170a306.svg",
+    "main.css": "/portfolio/static/css/main.dbb8d1fd.css",
+    "main.js": "/portfolio/static/js/main.5b1d1c37.js",
+    "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
+    "static/js/487.1ebde006.chunk.js": "/portfolio/static/js/487.1ebde006.chunk.js",
+    "static/css/990.c6a7ee28.chunk.css": "/portfolio/static/css/990.c6a7ee28.chunk.css",
+    "static/js/990.9bdcab81.chunk.js": "/portfolio/static/js/990.9bdcab81.chunk.js",
+    "static/media/safari-pinned-tab.svg": "/portfolio/static/media/safari-pinned-tab.8d636ec7dee2f9d34969bc70bf9a1090.svg",
     "static/media/KiloTrade.png": "/portfolio/static/media/KiloTrade.028d5cd19aece3f8d037.png",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/CV_NGUIMFACK_NKENGFACK_Donald_Blondin_En.pdf": "/portfolio/static/media/CV_NGUIMFACK_NKENGFACK_Donald_Blondin_En.2eceb10a6ba7e89ac697.pdf",
     "static/media/tamco-tech.png": "/portfolio/static/media/tamco-tech.97d5665125eae076d21a.png",
     "static/media/UDs.png": "/portfolio/static/media/UDs.ac9c92429bb7ba19f9cd.png",
     "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -19,19 +20,18 @@
     "static/media/googleAssistantLogo.webp": "/portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/codeInLogo.webp": "/portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "static/media/pwaLogo.webp": "/portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/portfolio/index.html",
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.a1864d08.css.map": "/portfolio/static/css/main.a1864d08.css.map",
-    "main.c935a666.js.map": "/portfolio/static/js/main.c935a666.js.map",
-    "64.bba8fa55.chunk.css.map": "/portfolio/static/css/64.bba8fa55.chunk.css.map",
-    "64.41912c0a.chunk.js.map": "/portfolio/static/js/64.41912c0a.chunk.js.map",
-    "769.b3cbb36b.chunk.css.map": "/portfolio/static/css/769.b3cbb36b.chunk.css.map",
-    "769.6b18baac.chunk.js.map": "/portfolio/static/js/769.6b18baac.chunk.js.map"
+    "main.dbb8d1fd.css.map": "/portfolio/static/css/main.dbb8d1fd.css.map",
+    "main.5b1d1c37.js.map": "/portfolio/static/js/main.5b1d1c37.js.map",
+    "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
+    "487.1ebde006.chunk.js.map": "/portfolio/static/js/487.1ebde006.chunk.js.map",
+    "990.c6a7ee28.chunk.css.map": "/portfolio/static/css/990.c6a7ee28.chunk.css.map",
+    "990.9bdcab81.chunk.js.map": "/portfolio/static/js/990.9bdcab81.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1864d08.css",
-    "static/js/main.c935a666.js"
+    "static/css/main.dbb8d1fd.css",
+    "static/js/main.5b1d1c37.js"
   ]
 }
