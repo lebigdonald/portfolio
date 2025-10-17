@@ -1,0 +1,38 @@
+### VisualStudioCode template
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+.idea/*
+node_modules/*
+.env
+build/
+dist/
+out/
+.DS_Store
+Thumbs.db
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log**
+coverage/
+.cache/
+.next/
+.nuxt/
+*.local
+
+.env.*.local
+.vscode-test/
+.sass-cache/
+*.tsbuildinfo
