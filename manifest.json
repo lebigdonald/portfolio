@@ -1,95 +1,25 @@
 {
-    "name" : "LeBigDonald",
-    "short_name" : "LBD",
-    "Description": "Donald NKENGFACK Portfolio",
-    "lang": "en-US",
-    "start_url" : "/",
-    "background_color" : "#fff",
-    "theme_color" : "#000",
-    "display" : "standalone",
-    "orientation": "any",
-    "status_bar" : "black",
-    "icons": [
-        {
-            "src": "./img/icons/LBD-16x16.png",
-            "type": "image/png",
-            "sizes": "16x16",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-32x32.png",
-            "type": "image/png",
-            "sizes": "32x32",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-48x48.png",
-            "type": "image/png",
-            "sizes": "48x48",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-72x72.png",
-            "type": "image/png",
-            "sizes": "72x72",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-96x96.png",
-            "type": "image/png",
-            "sizes": "96x96",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-128x128.png",
-            "type": "image/png",
-            "sizes": "128x128",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-144x144.png",
-            "type": "image/png",
-            "sizes": "144x144",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-152x152.png",
-            "type": "image/png",
-            "sizes": "152x152",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-192x192.png",
-            "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-384x384.png",
-            "type": "image/png",
-            "sizes": "384x384",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "./img/icons/LBD-512x512.png",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
-        }
-    ],
-    "shortcuts" : [
-        {
-            "name" : "LeBigDonald",
-            "description" : "Donald NKENGFACK Portfolio",
-            "url" : "/",
-            "icons" : [
-                {
-                    "src" : "./img/icons/LBD-128x128.png",
-                    "type": "image/png",
-                    "sizes": "128x128",
-                    "purpose": "any maskable"
-                }
-            ]
-        }
-    ]
+  "short_name": "PortFolio",
+  "name": "PortFolio",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/android-chrome-384x384.png?v8=qAJ44G5Bm7",
+      "type": "image/png",
+      "sizes": "384x384"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6c63ff",
+  "background_color": "#ffffff"
 }
