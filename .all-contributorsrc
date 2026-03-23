@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "lebigdonald",
+      "name": "Donald NGUIMFACK",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40794932?v=4",
+      "profile": ""
+      "profile": "https://github.com/lebigdonald/",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 1,
+  "projectName": "porfolio",
+  "projectOwner": "lebigdonald",
+  "repositoryUrl": ""
+  "repoType": "github",
+  "repoHost": "https://github.com/lebigdonald/portfolio.git",
+  "skipCi": true,
+  "commitConvention": "angular"
+}
