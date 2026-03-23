@@ -12,7 +12,7 @@
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react-dom": "^19.2.4",
     "react-easy-emoji": "^1.8.1",
     "react-headroom": "^3.0.0",
     "react-reveal": "^1.2.2",
