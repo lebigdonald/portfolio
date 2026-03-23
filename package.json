@@ -4,10 +4,11 @@
   "version": "1.1.0",
   "private": true,
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.3.0",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
@@ -16,8 +17,8 @@
     "react-headroom": "^3.0.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.1",
-    "react-test-renderer": "^16.10.2",
-    "react-twitter-embed": "3.0.3",
+    "react-test-renderer": "^19.2.0",
+    "react-twitter-embed": "4.0.4",
     "sass": "^1.32.8"
   },
   "scripts": {
@@ -52,7 +53,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "dotenv": "^8.2.0",
     "prettier": "^3.6.2"
+    "dotenv": "^17.2.3"
   }
 }
