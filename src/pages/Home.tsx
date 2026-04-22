@@ -14,7 +14,7 @@ const HeroName = () => {
     >
       <h1 className="text-[12vw] lg:text-[10vw] xl:text-[8vw] font-grotesk font-bold leading-[0.85] tracking-tight">
         <span className="block">DONALD</span>
-        <span className="block text-accent-orange">NKENGFACK</span>
+        <span className="block text-accent-orange">NGUIMFACK</span>
       </h1>
     </motion.div>
   );

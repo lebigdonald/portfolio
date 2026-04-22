@@ -60,7 +60,7 @@ export default function Footer() {
 
             <div className="mt-12 pt-8 border-t border-primary-foreground/10">
               <p className="text-xs text-primary-foreground/40 font-grotesk">
-                © {new Date().getFullYear()} Donald Nkengfack. Architected with
+                © {new Date().getFullYear()} Donald Nguimfack. Architected with
                 precision.
               </p>
             </div>
