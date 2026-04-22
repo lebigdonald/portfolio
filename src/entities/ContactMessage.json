@@ -1,0 +1,36 @@
+{
+  "name": "ContactMessage",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Sender's full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Sender's email address"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Message subject"
+    },
+    "message": {
+      "type": "string",
+      "description": "Message body"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "unread",
+        "read",
+        "replied"
+      ],
+      "default": "unread"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}

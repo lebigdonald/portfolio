@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donald Nkengfack — Senior Software Developer | Junior Architect</title>
+  <meta name="description"
+        content="Portfolio of Donald Nkengfack — Innovative software engineer with 10+ years of experience designing, developing, and deploying scalable web and mobile applications." />
+  <meta name="theme-color" content="#1A1A1A" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Donald Nkengfack — The Architect's Ledger" />
+  <meta property="og:description"
+        content="Senior Software Developer & Junior Architect. Building scalable systems from Cameroon to the world." />
+  <meta property="og:type" content="website" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="D. Nkengfack" />
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+<script>
+  // Register service worker for PWA
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js").catch(() => {
+      });
+    });
+  }
+</script>
+</body>
+</html>

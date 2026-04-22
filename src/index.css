@@ -1,36 +1,143 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --font-inter: 'Inter', sans-serif;
+        --font-grotesk: 'Space Grotesk', sans-serif;
+
+        --background: 40 10% 97.5%;
+        --foreground: 0 0% 10%;
+        --card: 40 10% 97.5%;
+        --card-foreground: 0 0% 10%;
+        --popover: 40 10% 97.5%;
+        --popover-foreground: 0 0% 10%;
+        --primary: 0 0% 10%;
+        --primary-foreground: 40 10% 97.5%;
+        --secondary: 40 5% 92%;
+        --secondary-foreground: 0 0% 10%;
+        --muted: 40 5% 92%;
+        --muted-foreground: 0 0% 40%;
+        --accent: 18 100% 50%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 40 5% 85%;
+        --input: 40 5% 85%;
+        --ring: 18 100% 50%;
+        --chart-1: 18 100% 50%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+        --sidebar-background: 40 10% 96%;
+        --sidebar-foreground: 0 0% 10%;
+        --sidebar-primary: 0 0% 10%;
+        --sidebar-primary-foreground: 40 10% 97.5%;
+        --sidebar-accent: 40 5% 92%;
+        --sidebar-accent-foreground: 0 0% 10%;
+        --sidebar-border: 40 5% 85%;
+        --sidebar-ring: 18 100% 50%;
+    }
+
+    .dark {
+        --background: 0 0% 5%;
+        --foreground: 40 10% 95%;
+        --card: 0 0% 8%;
+        --card-foreground: 40 10% 95%;
+        --popover: 0 0% 8%;
+        --popover-foreground: 40 10% 95%;
+        --primary: 40 10% 95%;
+        --primary-foreground: 0 0% 5%;
+        --secondary: 0 0% 12%;
+        --secondary-foreground: 40 10% 95%;
+        --muted: 0 0% 12%;
+        --muted-foreground: 0 0% 55%;
+        --accent: 18 100% 50%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 15%;
+        --input: 0 0% 15%;
+        --ring: 18 100% 50%;
+        --chart-1: 18 100% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+        --sidebar-background: 0 0% 5%;
+        --sidebar-foreground: 40 10% 95%;
+        --sidebar-primary: 18 100% 50%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 0 0% 12%;
+        --sidebar-accent-foreground: 40 10% 95%;
+        --sidebar-border: 0 0% 15%;
+        --sidebar-ring: 18 100% 50%;
+    }
 }
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-background text-foreground font-inter;
+    }
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+@layer utilities {
+    .text-accent-orange {
+        color: hsl(18, 100%, 50%);
+    }
+
+    .bg-accent-orange {
+        background-color: hsl(18, 100%, 50%);
+    }
+
+    .border-accent-orange {
+        border-color: hsl(18, 100%, 50%);
+    }
 }
-html,
-body {
-  scroll-behavior: smooth;
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
 }
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: rem;
-    line-height: normal;
-  }
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 70%);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(18, 100%, 50%);
+}
+
+/* Selection */
+::selection {
+    background: hsl(18, 100%, 50%);
+    color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
