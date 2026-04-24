@@ -58,7 +58,7 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0">
           <OptimizedImage
-            src="https://media.base44.com/images/public/69c1254d053483a7cc2218ee/093469ab6_generated_5f02c4bb.png"
+            src="/images/home_1.png"
             alt="Minimalist workspace with architectural elements representing software engineering precision"
             className="w-full h-full"
             aspectRatio="auto"

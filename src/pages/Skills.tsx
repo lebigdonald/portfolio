@@ -3,16 +3,7 @@ import SectionHeader from "@/components/portfolio/SectionHeader";
 import SkillCategory from "@/components/portfolio/SkillCategory";
 import OptimizedImage from "@/components/portfolio/OptimizedImage";
 import {motion} from "framer-motion";
-import {
-  Container,
-  Cpu,
-  Database,
-  Globe,
-  Monitor,
-  Server,
-  Smartphone,
-  Wrench
-} from "lucide-react";
+import {Container, Cpu, Database, Globe, Monitor, Server, Smartphone, Wrench} from "lucide-react";
 
 const categoryConfig = [
   {key: "backend", title: "Backend", icon: Server},
@@ -32,7 +23,7 @@ export default function Skills() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <OptimizedImage
-            src="https://media.base44.com/images/public/69c1254d053483a7cc2218ee/55659ed2a_generated_7a5b5c34.png"
+            src="/images/skills.png"
             alt="Macro circuit board patterns representing technical precision and engineering mastery"
             className="w-full h-full"
             aspectRatio="auto"

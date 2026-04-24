@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-primary text-primary-foreground overflow-hidden">
       <OptimizedImage
-        src="https://media.base44.com/images/public/69c1254d053483a7cc2218ee/157e83ce7_generated_04121358.png"
+        src="/images/footer.png"
         alt="Vast minimalist landscape representing infinite possibilities"
         className="absolute inset-0 opacity-20"
         aspectRatio="auto"

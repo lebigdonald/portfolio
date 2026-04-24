@@ -11,7 +11,7 @@ export default function Work() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <OptimizedImage
-            src="https://media.base44.com/images/public/69c1254d053483a7cc2218ee/d4bc4f177_generated_6babf7dc.png"
+            src="/images/work.png"
             alt="Brutalist architecture representing structural software design methodology"
             className="w-full h-full"
             aspectRatio="auto"
